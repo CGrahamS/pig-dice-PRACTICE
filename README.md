@@ -10,7 +10,7 @@ _This webpage will allow user to play a game of pig-dice._
 
 ## Specs
 
-###### 1. Program will store username.
+###### 1. Program will store username. PASSED 
 * _Example Input: Barth Sampson_
 * _Example Output: Barth Sampson_
 
