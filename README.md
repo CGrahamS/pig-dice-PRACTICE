@@ -10,13 +10,13 @@ _This webpage will allow user to play a game of pig-dice._
 
 ## Specs
 
-###### 1. Program will store username. PASSED 
+###### 1. Program will store username. PASSED
 * _Example Input: Barth Sampson_
 * _Example Output: Barth Sampson_
 
-###### 2. Program will store user scores and rolls.
-* _Example Input: [Barth Sampson, total score, round score, round rolls]_
-* _Example Output: [Barth Sampson, total score, round score, round rolls]_
+###### 2. Program will store user scores and rolls. PASSED
+* _Example Input: [Barth Sampson, 5, 5, 5]_
+* _Example Output: [Barth Sampson, 5, 5, 5]_
 
 ###### 2. Program will roll a single die.
 * _Example Input: roll_
