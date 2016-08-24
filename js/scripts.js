@@ -21,3 +21,8 @@ Player.prototype.playerRoll = function() {
   this.roundScores[0] += roll;
   console.log(roll)
 }
+
+Player.prototype.playerHold = function() {
+  this.totalScore += this.roundScores[0];
+  console.log(this.totalScore);
+}

@@ -38,7 +38,7 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: 4, 5_
 * _Example Output: 9_
 
-###### 8. Program will return total of round scores as total score.
+###### 8. Program will return total of round scores as total score. PASSED
 * _Example Input: 9, 10_
 * _Example Output: 19_
 
