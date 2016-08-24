@@ -34,7 +34,7 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: 4_
 * _Example Output: 4_
 
-###### 7. Program will return a round score that equals the total of all rolls that round.
+###### 7. Program will return a round score that equals the total of all rolls that round. PASSED
 * _Example Input: 4, 5_
 * _Example Output: 9_
 
