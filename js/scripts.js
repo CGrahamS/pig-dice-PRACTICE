@@ -28,4 +28,10 @@ Player.prototype.playerHold = function() {
   this.roundScores.unshift(0);
   console.log(this.roundScores);
   console.log(this.totalScore);
+  if (this.totalScore >= 100) {
+  	console.log("true");
+  	return true;
+  } else {
+  	console.log("false")
+  }
 }

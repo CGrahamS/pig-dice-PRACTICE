@@ -42,9 +42,9 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: 9, 10_
 * _Example Output: 19_
 
-###### 9. Program will determine user wins if total score is equal to or more than 100.
+###### 9. Program will determine user wins if total score is equal to or more than 100. PASSED
 * _Example Input: 100_
-* _Example Output: Win!_
+* _Example Output: true_
 
 ###### 10. Program will return a round score as 0 if dice roll is 1.
 * _Example Input: 1_
