@@ -50,7 +50,7 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: 1_
 * _Example Output: 0_
 
-###### 11. Program will store multiple user details.
+###### 11. Program will store multiple user details. PASSED
 * _Example Input: [Lesa Sampson, total score, round score, round rolls]_
 * _Example Output: [Lesa Sampson, total score, round score, round rolls]_
 
