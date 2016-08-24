@@ -54,12 +54,12 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: [Lesa Sampson, total score, round score, round rolls]_
 * _Example Output: [Lesa Sampson, total score, round score, round rolls]_
 
-###### 12. Program will end user turn if held.
-* _Example Input: hold_
+###### 12. Program will end user turn they roll a 1. PASSED
+* _Example Input: 1_
 * _Example Output: end turn_
 
-###### 13. Program will end user turn if roll is 1.
-* _Example Input: 1_
+###### 13. Program will end user turn if held.
+* _Example Input: hold_
 * _Example Output: end turn_
 
 ## Setup/Installation Requirements
