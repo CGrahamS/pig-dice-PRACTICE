@@ -4,3 +4,7 @@ function Player(name) {
   this.roundScores = [];
   this.rolls = [];
 }
+
+var rollDie = function() {
+  return 1 + Math.floor(Math.random() * 6);
+}
