@@ -18,11 +18,11 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: [Barth Sampson, 5, 5, 5]_
 * _Example Output: [Barth Sampson, 5, 5, 5]_
 
-###### 2. Program will roll a single die.
+###### 2. Program will roll a single die. PASSED
 * _Example Input: roll_
 * _Example Output: number between 1-6_
 
-###### 3. Program will store a single die roll.
+###### 3. Program will store a single die roll. PASSED
 * _Example Input: 4_
 * _Example Output: 4_
 
