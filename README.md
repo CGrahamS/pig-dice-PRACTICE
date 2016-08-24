@@ -46,7 +46,7 @@ _This webpage will allow user to play a game of pig-dice._
 * _Example Input: 100_
 * _Example Output: true_
 
-###### 10. Program will return a round score as 0 if dice roll is 1.
+###### 10. Program will return a round score as 0 if dice roll is 1. PASSED
 * _Example Input: 1_
 * _Example Output: 0_
 

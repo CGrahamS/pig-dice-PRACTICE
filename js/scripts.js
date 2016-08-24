@@ -18,20 +18,25 @@ var rollDie = function() {
 
 Player.prototype.playerRoll = function() {
   var roll = rollDie();
-  this.roundScores[0] += roll;
-  console.log(roll)
+  if (roll !== 1) {
+  	this.roundScores[0] += roll;
+  	console.log("Roll if not 1: " + roll)
+  } else {
+  	console.log("Roll if 1: " + true)
+  }
+
 }
 
 Player.prototype.playerHold = function() {
   this.totalScore += this.roundScores[0];
-  console.log(this.roundScores);
+  console.log("Round scores before shift: " + this.roundScores);
   this.roundScores.unshift(0);
-  console.log(this.roundScores);
-  console.log(this.totalScore);
+  console.log("Round scores after shift: " + this.roundScores);
+  console.log("Total Score: " + this.totalScore);
   if (this.totalScore >= 100) {
-  	console.log("true");
+  	console.log("Win condition: " + true);
   	return true;
   } else {
-  	console.log("false")
+  	console.log("Win condition: " + false);
   }
 }
