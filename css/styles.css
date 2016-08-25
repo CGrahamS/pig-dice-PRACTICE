@@ -1,3 +1,30 @@
+.page-header {
+  text-align: center;
+}
+
+#player-names form {
+  margin: 0 auto;
+}
+
+#player-names button{
+  letter-spacing: 1.5em;
+  padding-left: 1.8em;
+  width: 100%;
+}
+
 #player-buttons {
+  display: none;
+  text-align: center;
+}
+
+#winner {
+  text-align: center;
+  padding: 0 auto;
+  display: none;
+}
+
+#player-1-alert,
+#player-2-alert,
+#players-alert {
   display: none;
 }
