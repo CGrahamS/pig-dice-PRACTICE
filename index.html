@@ -11,26 +11,47 @@
     <div class="container">
       <h1>Pig Dice</h1>
       <div class="row">
-        <div class="col-md-12">
+        <div id="player-names" class="col-md-12">
           <form>
+            <div class="form-group">
+              <label for="player-1">Enter your name:</label>
+              <input id="player-1" type="text" class="form-control" placeholder="Player 1">
+            </div>
+            <div class="form-group">
+              <label for="player-2">Enter your name:</label>
+              <input id="player-2" type="text" class="form-control" placeholder="Player 2">
+            </div>
+            <button type="submit" class="btn btn-success">BEGIN</button>
           </form>
         </div>
       </div>
-      <div class="row">
+      <div id="player-buttons" class="row">
         <div class="col-md-6">
-          <div class="player1-buttons">
-
+          <div class="player-1-buttons">
+            <h3 id="player-1-name"></h3>
+            <h4>Total Score: <span id="player-1-total"></span></h4>
+            <button id="player-1-roll" type="button" class="btn btn-warning">Roll</button>
+            <button id="player-1-hold"type="button" class="btn btn-danger">Hold</button>
           </div>
-          <div class="player1-output">
+          <div class="player-1-output">
+            <h4>Round Score</h4>
+            <ul id="player-1-rolls">
 
+            </ul>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="player2-buttons">
-
+          <div class="player-2-buttons">
+            <h3 id="player-2-name"></h3>
+            <h4>Total Score: <span id="player-2-total"></span></h4>
+            <button id="player-2-roll" type="button" class="btn btn-warning">Roll</button>
+            <button id="player-2-hold" type="button" class="btn btn-danger">Hold</button>
           </div>
-          <div class="player2-output">
+          <div class="player-2-output">
+            <h4>Round Score</h4>
+            <ul id="player-2-rolls">
 
+            </ul>
           </div>
         </div>
 
