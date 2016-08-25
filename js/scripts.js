@@ -28,7 +28,7 @@ Player.prototype.hold = function(newGame, player1, player2) {
   this.totalScore += this.roundScore;
   console.log("Total Score: " + this.totalScore);
   this.roundScore = 0;
-  if (this.totalScore >= 100) {
+  if (this.totalScore >= 50) {
   	console.log("Win condition: " + true);
   	newGame.gameOver = true;
   } else {
@@ -117,7 +117,7 @@ $(function() {
       switchToPlayer1();
       $("#player-1-roll").click(function() {
         player1.roll(newGame, newGame.player1, newGame.player2);
-        $("ul#player-1-rolls").append("<li>" + player1.lastRoll + "</li>");
+        $("ul#player-1-rolls").last().append("<li>" + player1.lastRoll + "</li>");
         $("#player-1-round-score").text(player1.roundScore);
         if (newGame.currentPlayer === player2) {
           switchToPlayer2();
@@ -160,6 +160,8 @@ $(function() {
         $("#winner").hide();
         $("#player-names").show();
         emptyFields();
+        $("#player-1-roll").unbind();
+        $("#player-2-roll").unbind();
       });
         $("#play-again").click(function(){
           playAgain(newGame, player1, player2);
@@ -169,10 +171,16 @@ $(function() {
       });
     } else if (player2Name) {
       $("#player-1-alert").show();
+      $("#player-2-alert").hide();
+      $("#players-alert").hide();
     } else if (player1Name) {
       $("#player-2-alert").show();
+      $("#players-alert").hide();
+      $("#player-1-alert").hide();
     } else {
       $("#players-alert").show();
+      $("#player-1-alert").hide();
+      $("#player-2-alert").hide();
     }
   });
 });
