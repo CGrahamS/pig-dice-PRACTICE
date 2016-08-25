@@ -100,12 +100,20 @@ $(function() {
     $("#player-1-hold").click(function(){
       player1.hold(newGame, newGame.player1, newGame.player2);
       $("#player-1-total").text(player1.totalScore);
-      switchToPlayer2();
+      if (newGame.gameOver === true) {
+        alert("Player 1 Wins!")
+      } else {
+        switchToPlayer2();
+      }
     });
     $("#player-2-hold").click(function(){
       player2.hold(newGame, newGame.player1, newGame.player2);
       $("#player-2-total").text(player2.totalScore);
-      switchToPlayer1();
+      if (newGame.gameOver === true) {
+        alert("Player 2 Winds!")
+      } else {
+        switchToPlayer1();        
+      }
     });
   });
 });
