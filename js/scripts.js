@@ -55,6 +55,20 @@ Player.prototype.hold = function(newGame, player1, player2) {
 
 //UI-LOGIC
 $(function() {
+  var switchToPlayer1 = function() {
+    $("#player-2-roll").prop("disabled", true);
+    $("#player-1-roll").prop("disabled", false);
+    $("#player-2-hold").prop("disabled", true);
+    $("#player-1-hold").prop("disabled", false);
+    $("#player-2-rolls").empty();
+  }
+  var switchToPlayer2 = function() {
+    $("#player-1-roll").prop("disabled", true);
+    $("#player-2-roll").prop("disabled", false);
+    $("#player-1-hold").prop("disabled", true);
+    $("#player-2-hold").prop("disabled", false);
+    $("#player-1-rolls").empty();
+  }
   $("form").submit(function(event){
     event.preventDefault();
     var player1Name = $("input#player-1").val();
@@ -66,9 +80,32 @@ $(function() {
     var newGame = new Game(player1, player2);
     $("#player-names").hide();
     $("#player-buttons").show();
+    switchToPlayer1();
     $("#player-1-roll").click(function() {
       player1.roll(newGame, newGame.player1, newGame.player2);
       $("ul#player-1-rolls").append("<li>" + player1.lastRoll + "</li>");
+      $("#player-1-round-score").text(player1.roundScore);
+      if (newGame.currentPlayer === player2) {
+        switchToPlayer2();
+      }
+    });
+    $("#player-2-roll").click(function() {
+      player2.roll(newGame, newGame.player1, newGame.player2);
+      $("ul#player-2-rolls").append("<li>" + player2.lastRoll + "</li>");
+      $("#player-2-round-score").text(player2.roundScore);
+      if (newGame.currentPlayer === player1) {
+        switchToPlayer1();
+      }
+    });
+    $("#player-1-hold").click(function(){
+      player1.hold(newGame, newGame.player1, newGame.player2);
+      $("#player-1-total").text(player1.totalScore);
+      switchToPlayer2();
+    });
+    $("#player-2-hold").click(function(){
+      player2.hold(newGame, newGame.player1, newGame.player2);
+      $("#player-2-total").text(player2.totalScore);
+      switchToPlayer1();
     });
   });
 });
