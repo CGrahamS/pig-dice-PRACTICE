@@ -1,12 +1,23 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
 .page-header {
   text-align: center;
   font-family: 'Bungee Shade', cursive;
   font-size: 5em;
 }
-ul {
+
+#player-names li {
+  margin: 1em;
+}
+
+#player-1-rolls,
+#player-2-rolls {
   list-style: square;
   list-style-position: inside;
 }
+
 #player-names form {
   margin: 0 auto;
 }
@@ -23,12 +34,17 @@ ul {
 }
 
 #player-1-field, #player-2-field {
-  border: black 2px solid;
+  background-color: lightgrey;
   border-radius: 5px;
 }
 #player-1-field {
-  margin-right: 20px;
+  margin-right: 10px;
 }
+
+#player-2-field {
+  margin-left: 10px;
+}
+
 #winner {
   text-align: center;
   padding: 0 auto;
